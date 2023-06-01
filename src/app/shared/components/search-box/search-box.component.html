@@ -1,0 +1,10 @@
+<!-- ese place holder se creo en search...ts -->
+
+<!-- (keyup.enter)="emitValue(txtInput.value)" ESTO ES PARA DAR ENTER -->
+<input
+  type="text"
+  [placeholder]="placeholder"
+  class="form-control"
+  [value]="initialValue"
+  (keyup)="onKeyPress(txtInput.value)"
+  #txtInput>

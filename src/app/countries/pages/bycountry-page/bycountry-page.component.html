@@ -1,0 +1,23 @@
+<h2>Por Pa&iacute;s</h2>
+<hr>
+
+<div class="row">
+  <div class="col">
+    <!-- para que aparezca se debe importar en el countri.module -->
+    <search-search-box
+    (onDebounce)="searchByCountry($event)"
+    [initialValue]="initialValue"
+    placeholder="Busca por pais ">
+  </search-search-box>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <hr>
+   <countries-table [countries]="countries" ></countries-table>
+
+  </div>
+</div>
+
